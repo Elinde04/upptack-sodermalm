@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-
+width, initial-scale=1.0">
+<title>Upptäck Södermalm</title>
+
+<!--Kopplar Html till Css-->
+<link rel="stylesheet" href="style/style.css">
+<!--Visar ikon i webbläsarens flik-->
+<link rel="icon" type="image/png" href="Images/emoji.png">
+
+</head>
+<body>
+    <header>
+        <!--Navigationsmeny för att kunna växla mellan sidor-->
+        <nav class="navbar">
+               <!--Webbplatsens namn-->
+                <h2 class="logo-text">📍Upptäck Södermalm</h2>
+          <!--Samlar alla länkar-->
+            <ul class="nav-menu">
+                  <!--Länk till startsidan-->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Hem</a>
+                </li>
+                 <!--Länk till mat & dryck-->
+                <li class="nav-item">
+                    <a href="Mat&Dryck.html" class="nav-link">Mat&Dryck</a>
+                </li>
+                 <!--Länk till upptäck-->
+                <li class="nav-item">
+                    <a href="Upptäck.html" class="nav-link">Upptäck</a>
+                </li>
+                 <!--Länk till bucketlist-->
+                <li class="nav-item">
+                    <a href="BucketList.html" class="nav-link">BucketList</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bucket">
+<!-- Huvudrubrik -->
+<h1>Din bucketlist för Södermalm</h1>
+
+<!--Introduktion -->
+<p>Hur mycket av Södermalm har du upptäckt? Här har vi samlat några roliga 
+    aktiviteter och upplevelser som du kan testa. Bocka av det du har gjort och se 
+    hur många upplevelser du har kvar att upptäcka!</p>
+    </section>
+
+<!-- Lista med aktiviteter-->
+ <section class="bucketlist">
+    <h2>Saker att göra på Södermalm</h2>
+    <p id="antal"> Du har gjort 0 av 9 aktiviteter</p>
+
+
+<!-- Aktiviteter som kan kryssas i-->
+ <label>
+    <input type="checkbox">
+    <span> 📸 Besöka Fotografiska</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> ☕️ Ta en fika på ett mysigt café</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🌅 Se solnedgången från Skinnarviksberget</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🍦 Äta glass vid Nytorget</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🌿 Promenera längs Monteliusvägen</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🍝 Prova en ny resturang</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🏘️ Utforska gatorna i SoFo</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🎬 Se en film på Bio Rio</span>
+ </label>
+ <label>
+    <input type="checkbox">
+    <span> 🛍️ Fynda något i en second-hand butik</span>
+ </label>
+ </section>
+<script src="Script/script.js"></script>
+</body> 
+</html>

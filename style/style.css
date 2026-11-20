@@ -1,0 +1,206 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* MenyRad Högst Upp*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Ger sidhuvudet en grön bakgrundsfärg*/
+header {
+    background-color: #084808;
+}
+/* Placerar namn och navigationsmenyn brevid varandra */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+/* Gör texten vit*/
+.logo-text {
+color: white;
+}
+/* sätter länkarna på rad och tar bort punkter*/
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+/* Gör texten vit, tar bort sträck under texten och bestämmer storlek*/
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* HEM */
+/* Anpassar bilden med storlek och mellanrum ovanför*/
+.welcome-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+/* Huvudrubriken, skapar luft runt texten*/
+.welcome h1{
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+/* Flyttar texten till höger*/
+.welcome h2 {
+    margin-left: 30px;
+}
+/* Mellanrum mellan textstycken */
+.welcome p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* MAT & DRYCK*/
+/* Flytta in och ner texten */
+.Mat h1 {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/* Flytta in texten */
+.Mat p {
+    margin-left: 30px;
+    margin-right: 75px;
+}
+/* Rutorna brevid varandra*/
+.rutor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+/* Ger varje ruta grön backgrund, vit text, mellanrum*/
+.ruta {
+    background-color: #084808;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 30px;
+}
+/* Anpassar bilderna så att de fyller rutorna och får samma storlek*/
+.ruta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Flyttar underrubrikerna och ger dem grön text*/
+.cafeer h2,
+.barer h2,
+.Resturanger h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: #315c46;
+}
+
+/* UPPTÄCK*/
+/* Huvudrubrik placering*/
+.Upptäck h1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+/* Text placering*/
+.Upptäck p {
+    margin-left: 30px;
+    margin-right: 40px;
+}
+/* Placerar bilder och text brevid varandra*/
+.Montelius,
+.Fotografiska,
+.Bio {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+/* Bestämmer bildernas storlek*/
+.Montelius img,
+.Fotografiska img,
+.Bio img {
+width: 45%;
+border-radius: 10px;
+}
+/* Gör att texterna anpassar sig efter utrymmet*/
+.Montelius p,
+.Fotografiska p,
+.Bio p {
+    flex: 1;
+}
+/*Ger texten en grön färg, ändrar textstorlek mellanrum under*/
+.Montelius h2,
+.Fotografiska h2,
+.Bio h2 {
+    color: #315c46;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+
+/* BUCKETLIST*/
+/* Skapar luft rung huvudrubriken*/
+.bucket h1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+/* Skapar rum runt texten*/
+.bucket p {
+    margin-left: 30px;
+    margin-right: 40px;
+}
+/* Ger bucketlistan en egen ruta*/
+.bucketlist {
+    background-color: #e8efe9;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+/* Gör rubriken centrerad*/
+.bucketlist h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* Gör varje aktivitet till en egen rad*/
+.bucketlist label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Kryssrutorna större*/
+.bucketlist input {
+    width: 20px;
+    height: 20px;
+}
+/* Stryker över texten när rutan är ikryssad*/
+.bucketlist input:checked + span {
+    text-decoration: line-through;
+    color: green;
+}
