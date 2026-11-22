@@ -40,12 +40,13 @@ color: white;
 /* HEM */
 /* Anpassar bilden med storlek och mellanrum ovanför*/
 .welcome-image {
-    width: 100%;
-    max-width: 1000px;
+    display: block;
+    width: calc(100% - 60px); 
+    max-width: none;
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
-    margin-top: 25px;
+    margin: 25px auto 40px;
 }
 /* Huvudrubriken, skapar luft runt texten*/
 .welcome h1{
@@ -203,4 +204,49 @@ border-radius: 10px;
 .bucketlist input:checked + span {
     text-decoration: line-through;
     color: green;
+}
+/* Mobilanpassning*/
+/* Gäller när skärmen är 768px eller mindre*/
+@media (max-width: 768px) {
+    /* Låter menyn anpassa sig till en smalare skärm */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    /* Menylänkarna hamnar på flera rader*/
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    /*Startsidans bild lagom stor för mobil*/
+    .welcome-image {
+        width: 100%;
+        height: auto;
+    }
+    /* Placera bild och text under varandra */
+    .Montelius,
+    .Fotografiska,
+    .Bio {
+        flex-direction: column;
+        margin: 20px;
+        width: auto;
+        box-sizing: border-box;
+    }
+    /* Gör bilderna anpassade till mobil*/
+    .Montelius img,
+    .Fotografiska img,
+    .Bio img {
+        width: 100%;
+    }
+    /* Anpassar rutorna*/
+    .rutor {
+        margin: 20px;
+    }
+    /* Anpassar bucketlist till mobilens bredd*/
+    .bucketlist {
+        margin: 20px;
+        padding: 20px;
+    }
 }
